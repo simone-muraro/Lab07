@@ -87,9 +87,7 @@ public class PowerOutage {
 
 	@Override
 	public String toString() {
-		return "PowerOutage [idPowerOutage=" + idPowerOutage + ", idNerc=" + idNerc + ", customerAffected="
-				+ customerAffected + ", dateEventBegan=" + dateEventBegan + ", dateEventFinished=" + dateEventFinished+"oreIncendio"+oreIncendio
-				+ "]";
+		return ""+dateEventBegan.getYear()+" "+dateEventFinished+" "+dateEventBegan+" "+ oreIncendio+" "+customerAffected;
 	}
 	
 	private int calcolaOre() {

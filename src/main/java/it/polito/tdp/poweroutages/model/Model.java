@@ -61,6 +61,7 @@ public class Model {
 			//salvo la sequenza temporanea in quella finale 
 			risultato=new ArrayList<>(parziale);
 			totCustomersOttimo=totCustomers;
+			totOreGuasto=totOre;
 		}
 		//non ho più outages da aggiungere
 		if(livello == partenza.size()) 

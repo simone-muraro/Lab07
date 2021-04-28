@@ -46,9 +46,9 @@ public class FXMLController {
     	Nerc c= cmbNerc.getValue();
     	int x= Integer.parseInt(txtHours.getText());
     	int y= Integer.parseInt(txtYears.getText());
-    	listaStampa=model.trovaPowerOutage(c.getId(), x, y);
-    	txtResult.setText("Totale persone coinvolte: "+model.getTotCustomersOttimo());
-    	txtResult.setText("Totale ore di disservizio: "+model.getTotOreGuasto());
+    	listaStampa=model.trovaPowerOutage(c.getId(), y, x);
+    	txtResult.appendText("Totale persone coinvolte: "+model.getTotCustomersOttimo()+"\n");
+    	txtResult.appendText("Totale ore di disservizio: "+model.getTotOreGuasto()+"\n");
     	for(PowerOutage po: listaStampa) {    	
     		txtResult.appendText(po.toString()+"\n");
     	}
