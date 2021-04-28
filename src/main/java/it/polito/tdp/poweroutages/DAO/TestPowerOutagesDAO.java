@@ -14,6 +14,7 @@ public class TestPowerOutagesDAO {
 			PowerOutageDAO dao = new PowerOutageDAO() ;
 			
 			System.out.println(dao.getNercList()) ;
+			System.out.println(dao.getPowerOutageList(14)) ;
 
 		} catch (Exception e) {
 			System.err.println("Test FAILED");
